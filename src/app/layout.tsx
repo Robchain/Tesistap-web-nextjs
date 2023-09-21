@@ -12,7 +12,6 @@ import Telefono from '../../public/images/TELEFONO_Mesa de trabajo 1.png'
 import BPichincha from '../../public/images/BANCO PICHINCHA_Mesa de trabajo 1.png'
 import Mail from '../../public/images/INFO_Mesa de trabajo 1.png'
 import BPacifico from '../../public/images/BANCO DEL PACIFICO_Mesa de trabajo 1.png'
-import LogoPE from '../../public/images/HORARIO_Mesa de trabajo 1.png'
 import instagram from '../../public/images/instagran.png'
 import Link from 'next/link'
 
@@ -43,10 +42,10 @@ export default function RootLayout({
           </div>
           <div className='flex items-center mr-5'>
             <Image src={mensaje} alt='Correo' className='w-10' />
-            <span>tesistap@gmail.com</span>
+            <span>tesistap@outlook.com</span>
           </div>
           <div className='flex items-center'>
-            <a href='' target='_blank' className='mr-1'>
+            <a href='https://www.facebook.com/TESISTAP' target='_blank' className='mr-1'>
               <Image src={facebook} alt='Facebook' className='w-10'/>
             </a>
             <a href='' target='_blank' className='mr-1'>
@@ -89,7 +88,7 @@ export default function RootLayout({
         </div>
         </div>
         {children}
-        <footer style={{width:"100%", height:"100%", backgroundColor:"#28348a"}} className='flex justify-between'>
+        <footer style={{width:"100%", height:"100%", backgroundColor:"#002334"}} className='flex justify-between'>
     <div >
         <div className='flex items-center mb-2' >
             <div>
@@ -122,12 +121,7 @@ export default function RootLayout({
             </div>
             <div><span style={{fontWeight:700,color:"white"}}>tesistap@gmail.com</span>
         </div></div>
-        <div  style={{backgroundColor:'red'}}>
-            <div>
-            <Image src={Logo} alt='Horarios de atencion' width={45}/>
-            </div>
-            <div><span style={{fontWeight:700,color:"white"}}> Copyright 2023 TesisTap - Todos los derechos reservados.</span>
-        </div></div>
+        
     </div>
         <div className='flex flex-col justify-between'>
             <div className='flex flex-row justify-start' >
@@ -151,7 +145,6 @@ export default function RootLayout({
         <a  style={{color:'white', textDecoration:'none', fontWeight:700}} href='#'>
     C O N T A C T O
         </a>
-        
         </div>
         </div>
         <div className='flex flex-col justify-center'>
@@ -167,6 +160,12 @@ export default function RootLayout({
         </div>
         </div>
     </footer>
+    <div  style={{backgroundColor:'red', width:'100%'}}>
+            {/* <div>
+            <Image src={Logo} alt='Horarios de atencion' width={45}/>
+            </div> */}
+            <div className='flex justify-center'><span style={{fontWeight:700,color:"white", textAlign:'center'}}> Copyright 2023 TesisTap - Todos los derechos reservados.</span>
+        </div></div>
         </body>
     </html>
   )
