@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
     <Slides/>
-    <div style={{backgroundColor:'#f0f0f0'}} className='sm:px-48'>
+    <div style={{backgroundColor:'#fff'}} className='sm:px-48'>
       <div className='flex items-center justify-center py-3'>
       <span style={{color:'#28348A', fontSize:'20px', textAlign:'center', fontWeight:'400',lineHeight:'24px'}}>CONOCE NUESTROS SERVICIOS</span>
       </div>
